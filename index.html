@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app="App" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timothy Cluff - Software Developer</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /> <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> <!--Font Awesome-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" /> <!--jQuery Mobile CSS-->
+
+    <link rel="stylesheet" href="css/navigation_style.css" /> <!--Navigation Stylesheet-->
+    <link rel="stylesheet" href="css/home_style.css" /> <!--Home Stylesheet-->
+    <link rel="stylesheet" href="css/about_style.css" /> <!--About Stylesheet-->
+    <link rel="stylesheet" href="css/skills_style.css" /> <!--Skills Stylesheet-->
+    <link rel="stylesheet" href="css/skills_content_style.css" /> <!--Skills Content Stylesheet-->
+    <link rel="stylesheet" href="css/education_style.css" /> <!--Education Stylesheet-->
+    <link rel="stylesheet" href="css/contact_style.css" /> <!--Contact Stylesheet-->
+</head>
+<body>
+
+<section class="navigation" ng-controller="NavigationCtrl">
+    <nav class="navbar navbar-fixed-top">
+        <div class="navbar-left col-xs-12">
+            <ul class="nav navbar-nav col-xs-12">
+                <li class="dropdown col-xs-12" aria-hidden="true">
+                    <a class="dropdown-toggle col-xs-2" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                        <div id="hamburger-menu" class="fa fa-bars" style="font-size: 100px;" aria-hidden="true"></div>
+                    </a>
+
+                    <ul class="dropdown-menu col-xs-6">
+                        <li><a class="dropdownOne" href="#">{{ menu.pageOne }}<i class="fa fa-link"></i></a></li>
+                        <li><a class="dropdownTwo" href="#">{{ menu.pageTwo }}<i class="fa fa-link"></i></a></li>
+                        <li><a class="dropdownThree" href="#">{{ menu.pageThree }}<i class="fa fa-link"></i></a></li>
+                        <li><a class="dropdownFour" href="#">{{ menu.pageFour }}<i class="fa fa-link"></i></a></li>
+                        <li><a class="dropdownFive" href="#">{{ menu.pageFive }}<i class="fa fa-link"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</section>
+
+<section class="homePage" ng-controller="HomeCtrl">
+
+</section>
+
+<section class="aboutPage" ng-controller="AboutCtrl">
+
+</section>
+
+<section class="skillsPage" ng-controller="SkillCtrl">
+
+</section>
+
+<section class="skillContentPage" ng-controller="SkillContentCtrl">
+
+</section>
+
+<section class="educationPage" ng-controller="EducationCtrl">
+
+</section>
+
+<section class="contactPage" ng-controller="ContactCtrl">
+
+</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script> <!--Angular-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!--jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script> <!--jQuery Mobile-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!--Bootstrap JS-->
+
+<script src="JavaScript/App.js"></script> <!--App-->
+<script src="JavaScript/Controllers/NavigationCtrl.js"></script> <!--Navigation Controller-->
+<script src="JavaScript/Controllers/HomeCtrl.js"></script> <!--Home Controller-->
+<script src="JavaScript/Controllers/AboutCtrl.js"></script> <!--About Controller-->
+<script src="JavaScript/Controllers/SkillsCtrl.js"></script> <!--Skills Controller-->
+<script src="JavaScript/Controllers/SkillsContentCtrl.js"></script> <!--Skills Content Controller-->
+<script src="JavaScript/Controllers/EducationCtrl.js"></script> <!--Education Controller-->
+<script src="JavaScript/Controllers/ContactCtrl.js"></script> <!--Contact Controller-->
+
+</body>
+</html>
