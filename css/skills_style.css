@@ -1,0 +1,103 @@
+html, body {
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+}
+*{box-sizing: border-box;}
+.skillsContainer {
+    height: 50vh;
+    background-color: #2B2B2B;
+    font-family: "Segoe UI";
+    border-top: 5px solid #006666;
+    border-bottom: 5px solid #006666;
+    margin-bottom: 0;
+}
+.skillsContainer .carousel {
+    background-color: #2B2B2B;
+    height: 95%;
+    width: 100%;
+}
+.skillsContainer .carousel-cell {
+    width: 100vw;
+    height: 98%;
+    border-radius: 15px;
+    background-color: #2B2B2B;
+    counter-increment: carousel-cell;
+    color: #2B2B2B;
+}
+.skillsContainer .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    color: #2B2B2B;
+}
+.head_u_line {
+    width: 50vw;
+    height: 5px;
+    margin-left: 25vw;
+    background-color: #006666;
+}
+#java {
+    color: white;
+}
+#java #jHead {
+    font-size: 90px;
+    width: 100vw;
+    text-align: center;
+}
+#java #jBody {
+    font-size: 55px;
+    margin-left: 9vw;
+    margin-right: 9vw;
+    text-align: center;
+    margin-top: 2vh;
+    font-weight: 100;
+}
+#javaScript {
+    color: white;
+}
+#javaScript #jsHead {
+    font-size: 90px;
+    width: 100vw;
+    text-align: center;
+}
+#javaScript #jsBody {
+    font-size: 55px;
+    margin-left: 9vw;
+    margin-right: 9vw;
+    text-align: center;
+    margin-top: 5vh;
+    font-weight: 100;
+}
+#cSharp {
+    color: white;
+}
+#cSharp #cHead {
+    font-size: 90px;
+    width: 100vw;
+    text-align: center;
+}
+#cSharp #cBody {
+    font-size: 55px;
+    margin-left: 9vw;
+    margin-right: 9vw;
+    text-align: center;
+    margin-top: 4vh;
+    font-weight: 100;
+}
+#swift {
+    color: white;
+}
+#swift #sHead {
+    font-size: 90px;
+    width: 100vw;
+    text-align: center;
+}
+#swift #sBody {
+    font-size: 55px;
+    margin-left: 9vw;
+    margin-right: 9vw;
+    text-align: center;
+    margin-top: 2vh;
+    font-weight: 100;
+}

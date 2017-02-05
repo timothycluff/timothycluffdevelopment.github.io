@@ -1,0 +1,70 @@
+html, body {
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+}
+*{box-sizing: border-box;}
+.aboutContainer {
+    height: 50vh;
+    background-color: white;
+    font-family: "Segoe UI";
+    border-top: 5px solid #006666;
+    border-bottom: 5px solid #006666;
+    margin-bottom: 0;
+}
+.aboutContainer .carousel {
+    background-color: white;
+    height: 95%;
+    width: 100%;
+}
+.aboutContainer .carousel-cell {
+    width: 100vw;
+    height: 98%;
+    border-radius: 15px;
+    background-color: white;
+    counter-increment: carousel-cell;
+    color: white;
+}
+.aboutContainer .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    color: white;
+}
+#aboutText {
+    color: white;
+}
+#aboutText #txt {
+    margin-left: 9vw;
+    margin-right: 9vw;
+    text-align: center;
+    margin-top: 8vh;
+    color: black;
+    font-size: 70px;
+}
+#quote {
+    color: white;
+}
+#quote #quoteTxt {
+    margin-left: 11vw;
+    margin-right: 11vw;
+    text-align: center;
+    margin-top: 1vh;
+    color: black;
+    font-size: 45px;
+}
+.lineBreak {
+    width: 26vw;
+    height: 5px;
+    background-color: #006666;
+    margin-left: 37vw;
+    margin-top: 3vh;
+}
+#quote #author {
+    font-size: 50px;
+    margin-left: 11vw;
+    margin-right: 11vw;
+    text-align: center;
+    margin-top: 3vh;
+    color: black;
+}

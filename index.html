@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /> <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> <!--Font Awesome-->
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" /> <!--jQuery Mobile CSS-->
+    <link rel="stylesheet" href="flickity-docs/flickity.min.css" /> <!--Flickity-->
 
     <link rel="stylesheet" href="css/navigation_style.css" /> <!--Navigation Stylesheet-->
     <link rel="stylesheet" href="css/home_style.css" /> <!--Home Stylesheet-->
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="css/skills_content_style.css" /> <!--Skills Content Stylesheet-->
     <link rel="stylesheet" href="css/education_style.css" /> <!--Education Stylesheet-->
     <link rel="stylesheet" href="css/contact_style.css" /> <!--Contact Stylesheet-->
+    <link rel="stylesheet" href="css/Animations.css" /> <!--Animations-->
 </head>
 <body>
 
@@ -26,7 +28,6 @@
                     <a class="dropdown-toggle col-xs-2" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: white;">
                         <div id="hamburger-menu" class="fa fa-bars" style="font-size: 100px;" aria-hidden="true"></div>
                     </a>
-
                     <ul class="dropdown-menu col-xs-6">
                         <li><a class="dropdownOne" href="#">{{ menu.pageOne }}<i class="fa fa-link"></i></a></li>
                         <li><a class="dropdownTwo" href="#">{{ menu.pageTwo }}<i class="fa fa-link"></i></a></li>
@@ -41,15 +42,60 @@
 </section>
 
 <section class="homePage" ng-controller="HomeCtrl">
-
+    <div class="homeContainer panel col-xs-12">
+        <div class="homeName row col-xs-12 text-center">
+            <p>{{ home.name }}</p>
+        </div>
+        <div class="homeTitle row col-xs-12 text-center">
+            <p>{{ home.title }}</p>
+        </div>
+        <div class="scrollPrompt row col-xs-12 text-center">
+            <p>{{ home.prompt }}</p>
+            <i id="scrollPrompt" class="fa fa-angle-down floating"></i>
+        </div>
+    </div>
 </section>
 
 <section class="aboutPage" ng-controller="AboutCtrl">
-
+    <div class="aboutContainer panel col-xs-12">
+        <div class="carousel col-xs-12" data-flickity='{ "wrapAround": true}'>
+            <div id="aboutText" class="carousel-cell">
+                <p id="txt">{{ about.body }}</p>
+            </div>
+            <div id="quote" class="carousel-cell">
+                <p id="quoteTxt">{{ about.quoteTxt }}</p>
+                <div class="lineBreak"></div>
+                <p id="author">{{ about.quoteAuthor }}</p>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section class="skillsPage" ng-controller="SkillCtrl">
-
+<section class="skillsPage" ng-controller="SkillsCtrl">
+    <div class="skillsContainer panel col-xs-12">
+        <div class="carousel col-xs-12" data-flickity='{ "wrapAround": true}'>
+            <div id="java" class="carousel-cell">
+                <p id="jHead">{{ skills.javaTitle }}</p>
+                <div class="head_u_line"></div>
+                <p id="jBody">{{ jBody }}</p>
+            </div>
+            <div id="javaScript" class="carousel-cell">
+                <p id="jsHead">{{ skills.jsTitle }}</p>
+                <div class="head_u_line"></div>
+                <p id="jsBody">{{ jsBody }}</p>
+            </div>
+            <div id="cSharp" class="carousel-cell">
+                <p id="cHead">{{ skills.cTitle }}</p>
+                <div class="head_u_line"></div>
+                <p id="cBody">{{ cBody }}</p>
+            </div>
+            <div id="swift" class="carousel-cell">
+                <p id="sHead">{{ skills.swiftTitle }}</p>
+                <div class="head_u_line"></div>
+                <p id="sBody">{{ sBody }}</p>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="skillContentPage" ng-controller="SkillContentCtrl">
@@ -69,6 +115,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!--jQuery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script> <!--jQuery Mobile-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!--Bootstrap JS-->
+<script src="flickity-docs/flickity.pkgd.min.js"></script> <!--Flickity-->
 
 <script src="JavaScript/App.js"></script> <!--App-->
 <script src="JavaScript/Controllers/NavigationCtrl.js"></script> <!--Navigation Controller-->

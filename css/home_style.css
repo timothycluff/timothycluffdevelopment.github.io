@@ -1,0 +1,68 @@
+html, body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 0;
+    margin: 0;
+}
+.homeContainer {
+    margin-top: 10vh;
+    height: 90vh;
+    background-image: url(../pictures/mobileHome.jpg);
+    background-size: 90vh;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    border-bottom: 5px solid #006666;
+}
+.homeName {
+    height: 10vh;
+    padding: 0;
+    margin: 0;
+}
+.homeName p {
+    font-family: "Segoe UI";
+    font-size: 85px;
+    color: #006666;
+    margin-top: 10vh;
+    padding-top: 2vh;
+    background-color: rgba(0,0,0,.7);
+    height: 100%;
+    letter-spacing: 15px;
+}
+.homeTitle {
+    height: 8vh;
+    padding: 0;
+    margin: 0;
+}
+.homeTitle p {
+    font-family: "Segoe UI";
+    font-size: 65px;
+    color: #006666;
+    margin-top: 15vh;
+    padding-top: 1.5vh;
+    background-color: rgba(0,0,0,.7);
+    height: 100%;
+}
+.scrollPrompt {
+    height: 10vh;
+    padding: 0;
+    margin: 0;
+}
+.scrollPrompt p {
+    font-family: "Segoe UI";
+    font-size: 55px;
+    color: white;
+    margin-top: 57vh;
+    padding-top: 1.5vh;
+    height: 5vh;
+    letter-spacing: 15px;
+}
+.fa-angle-down {
+    font-size: 115px;
+    color: white;
+    height: 5vh;
+    width: 10vw;
+    padding-top: .5vh;
+}
