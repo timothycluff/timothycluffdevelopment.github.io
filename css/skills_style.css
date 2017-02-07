@@ -2,25 +2,20 @@ html, body {
     overflow-y: scroll;
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 400%;
 }
 *{box-sizing: border-box;}
 .skillsContainer {
-    height: 50%;
     background-color: #2B2B2B;
     font-family: "Segoe UI";
     border-top: 2px solid #006666;
     border-bottom: 2px solid #006666;
-    margin-bottom: 0;
+    height: 50%;
 }
 .skillsContainer .carousel {
     background-color: #2B2B2B;
-    height: 100%;
-    width: 100%;
 }
 .skillsContainer .carousel-cell {
-    width: 100%;
-    height: 98%;
     background-color: #2B2B2B;
     counter-increment: carousel-cell;
     color: #2B2B2B;
@@ -32,74 +27,46 @@ html, body {
     color: #2B2B2B;
 }
 .head_u_line {
-    width: 50%;
     height: 2px;
-    margin-left: 25%;
     background-color: #006666;
 }
 #java {
     color: white;
-    height: 100%;
 }
 #java #jHead {
-    font-size: 25px;
-    width: 100%;
     text-align: center;
-    height: 90%;
 }
 #java #jBody {
     font-size: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
     text-align: center;
-    margin-top: 5%;
-    font-weight: 100;
 }
 #javaScript {
     color: white;
 }
 #javaScript #jsHead {
-    font-size: 25px;
-    width: 100%;
     text-align: center;
 }
 #javaScript #jsBody {
-    font-size: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
     text-align: center;
-    margin-top: 10%;
     font-weight: 100;
 }
 #cSharp {
     color: white;
 }
 #cSharp #cHead {
-    font-size: 90px;
-    width: 100%;
     text-align: center;
 }
 #cSharp #cBody {
-    font-size: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
     text-align: center;
-    margin-top: 7%;
     font-weight: 100;
 }
 #swift {
     color: white;
 }
 #swift #sHead {
-    font-size: 25px;
-    width: 100%;
     text-align: center;
 }
 #swift #sBody {
-    font-size: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
     text-align: center;
-    margin-top: 5%;
     font-weight: 100;
 }

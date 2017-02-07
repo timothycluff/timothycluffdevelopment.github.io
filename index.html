@@ -4,19 +4,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>Timothy Cluff - Software Developer</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /> <!--Bootstrap CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> <!--Font Awesome-->
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" /> <!--jQuery Mobile CSS-->
-    <link rel="stylesheet" href="flickity-docs/flickity.min.css" /> <!--Flickity-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"/>
+    <!--jQuery Mobile CSS-->
+    <link rel="stylesheet" href="flickity-docs/flickity.min.css"/> <!--Flickity-->
 
-    <link rel="stylesheet" href="css/navigation_style.css" /> <!--Navigation Stylesheet-->
-    <link rel="stylesheet" href="css/home_style.css" /> <!--Home Stylesheet-->
-    <link rel="stylesheet" href="css/about_style.css" /> <!--About Stylesheet-->
-    <link rel="stylesheet" href="css/skills_style.css" /> <!--Skills Stylesheet-->
-    <link rel="stylesheet" href="css/skills_content_style.css" /> <!--Skills Content Stylesheet-->
-    <link rel="stylesheet" href="css/education_style.css" /> <!--Education Stylesheet-->
-    <link rel="stylesheet" href="css/contact_style.css" /> <!--Contact Stylesheet-->
-    <link rel="stylesheet" href="css/Animations.css" /> <!--Animations-->
+    <link rel="stylesheet" href="css/navigation_style.css"/> <!--Navigation Stylesheet-->
+    <link rel="stylesheet" href="css/home_style.css"/> <!--Home Stylesheet-->
+    <link rel="stylesheet" href="css/about_style.css"/> <!--About Stylesheet-->
+    <link rel="stylesheet" href="css/skills_style.css"/> <!--Skills Stylesheet-->
+    <link rel="stylesheet" href="css/skills_content_style.css"/> <!--Skills Content Stylesheet-->
+    <link rel="stylesheet" href="css/education_style.css"/> <!--Education Stylesheet-->
+    <link rel="stylesheet" href="css/contact_style.css"/> <!--Contact Stylesheet-->
+    <link rel="stylesheet" href="css/Animations.css"/> <!--Animations-->
 </head>
 <body>
 
@@ -25,7 +28,8 @@
         <div class="navbar-left col-xs-12">
             <ul class="nav navbar-nav col-xs-12">
                 <li class="dropdown col-xs-7" aria-hidden="true">
-                    <a class="dropdown-toggle col-xs-3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                    <a class="dropdown-toggle col-xs-3" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false" style="color: white;">
                         <div id="hamburger-menu" class="fa fa-bars" style="font-size: 35px;" aria-hidden="true"></div>
                     </a>
                     <ul class="dropdown-menu col-xs-4">
@@ -41,23 +45,29 @@
     </nav>
 </section>
 
-<section class="homePage" ng-controller="HomeCtrl">
-    <div class="homeContainer panel col-xs-12">
-        <div class="homeName row col-xs-12 text-center">
-            <p>{{ home.name }}</p>
+<div class="container col-xs-12 homePage" ng-controller="HomeCtrl">
+    <div class="homeContainer col-xs-12">
+        <div class="row">
+            <div class="homeName col-xs-12 text-center">
+                <p>{{ home.name }}</p>
+            </div>
         </div>
-        <div class="homeTitle row col-xs-12 text-center">
-            <p>{{ home.title }}</p>
+        <div class="row">
+            <div class="homeTitle col-xs-12 text-center">
+                <p>{{ home.title }}</p>
+            </div>
         </div>
-        <div class="scrollPrompt row col-xs-12 text-center">
-            <p>{{ home.prompt }}</p>
-            <i id="scrollPrompt" class="fa fa-angle-down floating"></i>
+        <div class="row">
+            <div class="scrollPrompt col-xs-12 text-center">
+                <p>{{ home.prompt }}</p>
+                <i id="scrollPrompt" class="fa fa-angle-down floating"></i>
+            </div>
         </div>
     </div>
-</section>
+</div>
 
-<section class="aboutPage" ng-controller="AboutCtrl">
-    <div class="aboutContainer panel col-xs-12">
+<div class="container col-xs-12 aboutPage" ng-controller="AboutCtrl">
+    <div class="aboutContainer col-xs-12">
         <div class="carousel col-xs-12" data-flickity='{ "wrapAround": true}'>
             <div id="aboutText" class="carousel-cell">
                 <p id="txt">{{ about.body }}</p>
@@ -69,10 +79,10 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 
-<section class="skillsPage" ng-controller="SkillsCtrl">
-    <div class="skillsContainer panel col-xs-12">
+<div class="container col-xs-12 skillsPage" ng-controller="SkillsCtrl">
+    <div class="skillsContainer col-xs-12">
         <div class="carousel col-xs-12" data-flickity='{ "wrapAround": true}'>
             <div id="java" class="carousel-cell">
                 <p id="jHead">{{ skills.javaTitle }}</p>
@@ -96,24 +106,21 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 
-<section class="skillContentPage" ng-controller="SkillContentCtrl">
+<div class="container col-xs-12 educationPage" ng-controller="EducationCtrl">
 
-</section>
+</div>
 
-<section class="educationPage" ng-controller="EducationCtrl">
+<div class="container col-xs-12 contactPage" ng-controller="ContactCtrl">
 
-</section>
-
-<section class="contactPage" ng-controller="ContactCtrl">
-
-</section>
+</div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script> <!--Angular-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!--jQuery-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script> <!--jQuery Mobile-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<!--jQuery Mobile-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!--Bootstrap JS-->
 <script src="flickity-docs/flickity.pkgd.min.js"></script> <!--Flickity-->
 
