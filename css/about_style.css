@@ -1,50 +1,66 @@
-html, body {
-    overflow-y: scroll;
-    margin: 0;
-    padding: 0;
-    height: 400%;
-}
-*{box-sizing: border-box;}
-.aboutContainer {
-    background-color: white;
-    font-family: "Segoe UI";
-    border-top: 2px solid #006666;
-    border-bottom: 2px solid #006666;
-    height: 50%;
-}
-.aboutContainer > .carousel {
-    background-color: white;
-}
-.aboutContainer > .carousel-cell {
-    background-color: white;
-    counter-increment: carousel-cell;
-    color: white;
-}
-.aboutContainer > .carousel-cell:before {
-    display: block;
-    text-align: center;
-    content: counter(carousel-cell);
-    color: white;
-}
-#aboutText {
-    color: white;
-}
-#aboutText #txt {
-    text-align: center;
-    color: black;
-}
-#quote {
-    color: white;
-}
-#quote #quoteTxt {
-    text-align: center;
-    color: black;
-}
-.lineBreak {
-    height: 2px;
-    background-color: #006666;
-}
-#quote #author {
-    text-align: center;
-    color: black;
+@media only screen and (max-device-width: 480px) {
+    * {
+        box-sizing: border-box;
+    }
+    .aboutPage {
+        width: 100%;
+        height: 45vh;
+        padding: 0;
+        margin: 0;
+        background-color: #2B2B2B;
+    }
+    .aboutContainer {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #2B2B2B;
+    }
+
+    .carousel {
+        background-color: white;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .aboutContainer .carousel-cell {
+        height: 100%;
+        padding: 0;
+        counter-increment: carousel-cell;
+        background-color: white;
+        width: 70%;
+        margin-left: 15%;
+        text-align: center;
+        font-family: "Segoe UI", sans-serif;
+    }
+
+    .aboutContainer > .carousel-cell:before {
+        display: block;
+        content: counter(carousel-cell);
+        color:white;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #aboutText {
+        margin-top: 10%;
+        font-size: 30px;
+    }
+    #quote {
+        margin-top: 5%;
+        font-size: 16px;
+    }
+    .lineBreak {
+        width: 50%;
+        margin-left: 25%;
+        height: 3px;
+        background-color: #006666;
+        margin-top: 10%;
+    }
+
+    #quote #author {
+        font-size: 22px;
+        margin-top: 7%;
+    }
 }

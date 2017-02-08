@@ -1,72 +1,91 @@
 html, body {
-    overflow-y: scroll;
-    margin: 0;
-    padding: 0;
-    height: 400%;
+
 }
 *{box-sizing: border-box;}
+.skillsPage {
+    width: 100%;
+    height: 45vh;
+    padding: 0;
+    margin: 0;
+}
+.flickity-page-dots {
+    display: none;
+}
+.flickity-prev-next-button.previous,
+.flickity-prev-next-button.next {
+    width: 20px;
+    height: 20px;
+    background-color: #006666;
+}
+path {
+    color: #006666;
+}
 .skillsContainer {
+    height: 100%;
     background-color: #2B2B2B;
-    font-family: "Segoe UI";
-    border-top: 2px solid #006666;
-    border-bottom: 2px solid #006666;
-    height: 50%;
 }
 .skillsContainer .carousel {
     background-color: #2B2B2B;
+    width: 100%;
+    height: 100%;
+
 }
 .skillsContainer .carousel-cell {
     background-color: #2B2B2B;
     counter-increment: carousel-cell;
     color: #2B2B2B;
+    width: 70%;
+    margin-left: 15%;
+    font-family: "Segoe UI", sans-serif;
+    text-align: center;
 }
 .skillsContainer .carousel-cell:before {
     display: block;
-    text-align: center;
     content: counter(carousel-cell);
     color: #2B2B2B;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
 }
 .head_u_line {
-    height: 2px;
+    width: 50%;
+    margin-left: 25%;
+    height: 3px;
     background-color: #006666;
 }
 #java {
     color: white;
 }
 #java #jHead {
-    text-align: center;
+    font-size: 35px;
 }
 #java #jBody {
-    font-size: 20px;
-    text-align: center;
+    margin-top: 15%;
 }
 #javaScript {
     color: white;
 }
 #javaScript #jsHead {
-    text-align: center;
+    font-size: 35px;
 }
 #javaScript #jsBody {
-    text-align: center;
-    font-weight: 100;
+    margin-top: 20%;
 }
 #cSharp {
-    color: white;
+    color: white
 }
 #cSharp #cHead {
-    text-align: center;
+    font-size: 35px;
 }
 #cSharp #cBody {
-    text-align: center;
-    font-weight: 100;
+    margin-top: 17%;
 }
 #swift {
     color: white;
 }
 #swift #sHead {
-    text-align: center;
+    font-size: 35px;
 }
 #swift #sBody {
-    text-align: center;
-    font-weight: 100;
+    margin-top: 15%;
 }
