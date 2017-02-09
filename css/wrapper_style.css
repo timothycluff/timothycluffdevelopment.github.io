@@ -1,11 +1,16 @@
-html, body {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    width: 100%;
-}
-.wrapContent {
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-    text-align: center;
+@media only screen and (max-device-width: 480px) {
+    html, body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 100%;
+        height: 100%;
+    }
+
+    .wrapContent {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
 }

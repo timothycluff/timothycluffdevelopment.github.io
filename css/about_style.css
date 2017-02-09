@@ -1,19 +1,28 @@
 @media only screen and (max-device-width: 480px) {
+    html, body {
+        height: 100%;
+        width: 100%;
+    }
+    .wrapContent {
+        height: 100%;
+        width: 100%;
+    }
     * {
         box-sizing: border-box;
     }
     .aboutPage {
-        width: 100%;
-        height: 45vh;
+        height: 45%;
         padding: 0;
         margin: 0;
-        background-color: #2B2B2B;
+        background-color: white;
+        border-top: 2px solid #006666;
+        border-bottom: 3px solid #006666;
     }
     .aboutContainer {
         height: 100%;
         margin: 0;
         padding: 0;
-        background-color: #2B2B2B;
+        background-color: white;
     }
 
     .carousel {
@@ -23,7 +32,9 @@
         height: 100%;
         width: 100%;
     }
-
+    .aboutPage .flickity-viewport {
+        background-color: white;
+    }
     .aboutContainer .carousel-cell {
         height: 100%;
         padding: 0;

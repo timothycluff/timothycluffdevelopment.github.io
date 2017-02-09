@@ -3,6 +3,6 @@
  */
 'use strict'
 
-function ContactCtrl($scope) {
+portfolioApp.controller('ContactCtrl', function ContactCtrl($scope) {
 
-}
+});

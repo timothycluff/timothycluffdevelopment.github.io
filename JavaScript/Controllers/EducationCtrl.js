@@ -3,6 +3,6 @@
  */
 'use strict'
 
-function EducationCtrl($scope) {
+portfolioApp.controller('EducationCtrl', function EducationCtrl($scope) {
 
-}
+});

@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/home_style.css"/> <!--Home Stylesheet-->
     <link rel="stylesheet" href="css/about_style.css"/> <!--About Stylesheet-->
     <link rel="stylesheet" href="css/skills_style.css"/> <!--Skills Stylesheet-->
-    <link rel="stylesheet" href="css/skills_content_style.css"/> <!--Skills Content Stylesheet-->
     <link rel="stylesheet" href="css/education_style.css"/> <!--Education Stylesheet-->
     <link rel="stylesheet" href="css/contact_style.css"/> <!--Contact Stylesheet-->
     <link rel="stylesheet" href="css/Animations.css"/> <!--Animations-->
@@ -34,9 +33,9 @@
                     <ul class="dropdown-menu col-xs-4">
                         <li><a class="dropdownOne" href="#">{{ menu.pageOne }}<i class="fa fa-link"></i></a></li>
                         <li><a class="dropdownTwo" href="#linkToAbout">{{ menu.pageTwo }}<i class="fa fa-link"></i></a></li>
-                        <li><a class="dropdownThree" href="#">{{ menu.pageThree }}<i class="fa fa-link"></i></a></li>
-                        <li><a class="dropdownFour" href="#">{{ menu.pageFour }}<i class="fa fa-link"></i></a></li>
-                        <li><a class="dropdownFive" href="#">{{ menu.pageFive }}<i class="fa fa-link"></i></a></li>
+                        <li><a class="dropdownThree" href="#linkToSkills">{{ menu.pageThree }}<i class="fa fa-link"></i></a></li>
+                        <li><a class="dropdownFour" href="#linkToEducation">{{ menu.pageFour }}<i class="fa fa-link"></i></a></li>
+                        <li><a class="dropdownFive" href="#linkToContact">{{ menu.pageFive }}<i class="fa fa-link"></i></a></li>
                     </ul>
                 </li>
             </ul>
@@ -81,6 +80,7 @@
     </div>
 
     <div class="container col-xs-12 skillsPage" ng-controller="SkillsCtrl">
+        <a name="linkToSkills"></a>
         <div class="skillsContainer col-xs-12">
             <div class="carousel col-xs-12" data-flickity='{ "wrapAround": true}'>
                 <div id="java" class="carousel-cell">
@@ -108,11 +108,18 @@
     </div>
 
     <div class="container col-xs-12 educationPage" ng-controller="EducationCtrl">
+        <a name="linkToEducation"></a>
+        <div class="educationContainer col-xs-12">
+
+        </div>
 
     </div>
 
     <div class="container col-xs-12 contactPage" ng-controller="ContactCtrl">
+        <a name="linkToContact"></a>
+        <div class="contactContainer col-xs-12">
 
+        </div>
     </div>
 </div>
 
@@ -129,7 +136,6 @@
 <script src="JavaScript/Controllers/HomeCtrl.js"></script> <!--Home Controller-->
 <script src="JavaScript/Controllers/AboutCtrl.js"></script> <!--About Controller-->
 <script src="JavaScript/Controllers/SkillsCtrl.js"></script> <!--Skills Controller-->
-<script src="JavaScript/Controllers/SkillsContentCtrl.js"></script> <!--Skills Content Controller-->
 <script src="JavaScript/Controllers/EducationCtrl.js"></script> <!--Education Controller-->
 <script src="JavaScript/Controllers/ContactCtrl.js"></script> <!--Contact Controller-->
 
